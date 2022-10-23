@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+    <link rel="stylesheet" href="./index.css" />
+    <title>Todo List</title>
+</head>
+<body>
+    <div class="header">
+            <img src="#" alt="logo">
+    <nav class="nav-menu">
+        <ul>
+                <li class="list-items">
+                    <i class="fa-solid fa-bell"></i>
+                </li>
+                <li class="list-items">
+                    <i class="fa-sharp fa-solid fa-thumbtack"></i>
+                </li>
+                <li class="list-items">
+                    <i class="fa-solid fa-paperclip"></i>
+                </li>
+                <li class="list-items">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </li>
+                
+                <li class="list-items">
+                    <i class="fa-solid fa-user"></i>
+                </li>
+        </ul>
+    </nav>
+    <div class="bars">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+</div>
+<div class="profile-section">
+    <div class="profile-picture">
+        <img src="/animation1.jpg" alt="profile picture" width="40px" height="40px" class="image"/>
+        <h3>Laura Jean</h3>
+        <p>Are you ok ?</p>
+    </div>
+    <div class="profile-categories">
+        <ul>
+            <li class="list-categories">
+                <i class="fa-solid fa-house">Home</i>
+            </li>
+            <li class="list-categories">
+                <i class="fa-sharp fa-solid fa-gauge">Dashboard</i>
+            </li>
+            <li class="list-categories">
+                <i class="fa-solid fa-chart-simple">Charts</i>
+            </li>
+            <li class="list-categories">
+                <i class="fa-solid fa-comment-dots">Chats</i>
+            </li>
+            <li class="list-categories">
+                <i class="fa-solid fa-location-dot">Maps</i>
+            </li>
+            <li class="list-categories">
+                <i class="fa-solid fa-user">Authentication</i>
+            </li>
+            <li class="list-categories">
+                <i class="fa-solid fa-gear">Settings</i>
+            </li>
+    </ul>
+    </div>
+</div>
+<div class="main">
+    <header>
+    <h2>task list</h2>
+    <form id="task-form">
+        <input type="text" id="task-input" placeholder="what do you have planned?" />
+        <input type="submit" id="task-submit" value="Add Task" />
+    </form>
+</header>
+<main class="task-list">
+    <h3>tasks for today</h3>
+    <div id="tasks">
+       <!--<div class="task">
+        <div class="content">
+            <input type="text" class="text" value="my task" readonly />
+        </div>
+        <div class="actions">
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
+        </div> 
+
+    </div> -->
+</div>
+</div>
+</main>
+<div class="footer">
+    <i class="fa-solid fa-user"></i>
+    <h6>No of active users</h6>  
+    <p>5000</p>
+</div>
+<script src="/main.js"></script>
+</body>
+</html>
