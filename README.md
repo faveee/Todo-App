@@ -14,7 +14,7 @@
 
 ## Description
  
-This project is centered the ability to delete and edit the todo list
+This project is centered on the ability to delete and edit the todo list
 
 ## Technology
 
