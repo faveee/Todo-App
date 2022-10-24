@@ -4,30 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BioRhyme&family=Lato&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
     <link rel="stylesheet" href="./index.css" />
     <title>Todo List</title>
 </head>
 <body>
     <div class="header">
-            <img src="#" alt="logo">
+            <img src="./images/logo.png" alt="logo" width="150px" height="30px" class="logo">
     <nav class="nav-menu">
         <ul>
                 <li class="list-items">
-                    <i class="fa-solid fa-bell"></i>
+                    <i class="fa-solid fa-bell" style="color: white;"></i>
                 </li>
                 <li class="list-items">
-                    <i class="fa-sharp fa-solid fa-thumbtack"></i>
+                    <i class="fa-sharp fa-solid fa-thumbtack" style="color: white;"></i>
                 </li>
                 <li class="list-items">
-                    <i class="fa-solid fa-paperclip"></i>
+                    <i class="fa-solid fa-paperclip" style="color: white;"></i>
                 </li>
                 <li class="list-items">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-magnifying-glass" style="color: white;"></i>
                 </li>
                 
                 <li class="list-items">
-                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-user" style="color: white;"></i>
                 </li>
         </ul>
     </nav>
@@ -37,34 +40,25 @@
 </div>
 <div class="profile-section">
     <div class="profile-picture">
-        <img src="/animation1.jpg" alt="profile picture" width="40px" height="40px" class="image"/>
+        <img src="./images/profile picture.jpg" alt="profile picture" width="40px" height="40px" class="image"/>
         <h3>Laura Jean</h3>
         <p>Are you ok ?</p>
     </div>
-    <div class="profile-categories">
-        <ul>
-            <li class="list-categories">
-                <i class="fa-solid fa-house">Home</i>
-            </li>
-            <li class="list-categories">
-                <i class="fa-sharp fa-solid fa-gauge">Dashboard</i>
-            </li>
-            <li class="list-categories">
-                <i class="fa-solid fa-chart-simple">Charts</i>
-            </li>
-            <li class="list-categories">
-                <i class="fa-solid fa-comment-dots">Chats</i>
-            </li>
-            <li class="list-categories">
-                <i class="fa-solid fa-location-dot">Maps</i>
-            </li>
-            <li class="list-categories">
-                <i class="fa-solid fa-user">Authentication</i>
-            </li>
-            <li class="list-categories">
-                <i class="fa-solid fa-gear">Settings</i>
-            </li>
-    </ul>
+    <div class="side-bar">
+        <a href="#home">
+                <i class="fa-solid fa-house"></i>Home</a>
+                <a href="#dashboard">
+                <i class="fa-sharp fa-solid fa-gauge"></i>Dashboard</a>
+                <a href="#charts">
+                <i class="fa-solid fa-chart-simple"></i>Charts</a>
+               <a href="#chats">
+                <i class="fa-solid fa-comment-dots"></i>Chats</a>
+            <a href="#maps">
+                <i class="fa-solid fa-location-dot"></i>Maps</a>
+            <a href="#authentication">
+                <i class="fa-solid fa-user"></i>Authentication</a>
+            <a href="#settings">
+                <i class="fa-solid fa-gear"></i>Settings</a>
     </div>
 </div>
 <div class="main">
@@ -92,10 +86,23 @@
 </div>
 </main>
 <div class="footer">
-    <i class="fa-solid fa-user"></i>
+    <i class="fa-regular fa-calendar-check"></i>
     <h6>No of active users</h6>  
     <p>5000</p>
 </div>
+
+<div class="footer-user">
+    <i class="fa-solid fa-user"></i>
+    <h6>No of events</h6>  
+    <p>1500</p>
+</div>
+
+<div class="footer2">
+    <i class="fa-solid fa-comment-dots lastslide"></i>
+    <h6>No of chat lines</h6>  
+    <p>700000</p>
+</div>
+
 <script src="/main.js"></script>
 </body>
 </html>
