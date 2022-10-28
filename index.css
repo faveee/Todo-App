@@ -12,6 +12,7 @@
     --borderColor: navy;
     --profileColor: #40476D;
     --primaryColor: #000;
+    --profileBackground: #F2F4F3;
 
     
 }
@@ -30,9 +31,11 @@
     background-color: var(--profileColor);
     width: 100%;
 }
+
 .logo {
     padding-left: 20px;
 }
+
 .nav-menu {
 height: 19px;
 width: 418px;
@@ -50,20 +53,16 @@ top: 26px;
     margin-left: 5px;
     margin-right: 5px;
 }
-
-.bars {
-display: none;
-}
   
-
 .profile-section {
     background-color: var(--contentColor);
    width: 25%;
-   height: 100vh;
+   height: 90vh;
+   
 }
 
 .profile-picture {
-    background-color: #F2F4F3;
+    background-color: var(--profileBackground);
     text-align: center;
     padding-top: 20px;
 }
@@ -77,23 +76,28 @@ padding-top: 5px;
     border-radius: 80%;
 }
 
+
+#check, #btn, #cancel {
+    display: none;
+}
+
 .side-bar a {
-line-height: 59px;
+line-height: 55px;
 padding-left: 40px;
 text-decoration: none;
 font-size: 20px;
 box-sizing: border-box;
 border-top: 1px solid black;
 border-bottom: 1px solid var(--borderColor);
-color: #000;
+color: var(--primaryColor);
 display: block;
-transition: 4s;
 }
 
 .side-bar a:hover {
     cursor: pointer;
     color: red;
 }
+
 .side-bar a i {
     margin-right: 16px;
 }
@@ -110,6 +114,7 @@ padding: 1rem;
     box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
     
 }
+
 .main h2 {
     text-align: left;
     padding: 20px 5px;
@@ -305,4 +310,205 @@ border: none;
 .footer2 i {
     margin-top: 15px;
     margin-left: 10px;
+}
+
+.contact-field {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--profileColor);
+  }
+
+  .contain {
+    width: 303px;
+    height: 302px;
+    border-radius: 0;
+    padding-left: 25px;
+    color: var(--contentColor);
+  }
+  
+  .contain h4 {
+     padding: 10px 0 10px 0;
+    }
+    
+    .contain p {
+padding-top: 10px;
+}
+
+.contain a {
+      text-decoration: none;
+      color: var(--contentColor);
+  }
+  
+  .contain a:hover {
+      color: red;
+      cursor: pointer;
+  }
+
+@media screen and (max-width: 480px) {
+    .list-items {
+        display: none;
+    }
+
+    .side-bar a {
+        line-height: 70px;
+        padding-left: 10px;
+        font-size: 15px;
+    }
+
+    .main {
+       top: 40%;
+       left: 2%;
+    width: 90%;
+    height: 65%;
+    }
+
+    #task-input {
+        flex: 1 1 0%;
+        padding: 5px;
+        width: 100%;
+        border-radius: 10px;
+        margin-right: 20px;
+        font-size: 1rem;
+        background-color: var(--darkestgray);
+    }
+    
+    #task-input::placeholder {
+        font-weight: 300;
+        font-size: 15px;
+    }
+    
+    #task-submit {
+        font-size: 1rem;
+        padding-top: 10px;
+    }
+
+    #tasks .task {
+        text-align: left;
+        padding-bottom: 10px;
+    
+    }
+
+    #tasks .task .content .text {
+        width: 170%;
+        border-radius: 10px;
+        margin-right: 10px;
+        font-size: 1rem;
+    }
+    
+    .task .actions button {
+        cursor: pointer;
+        margin: 0 0.4rem;
+        font-size: 1rem;
+        width: 100%;
+        display: block; 
+          
+    }
+
+    .task .actions .edit {
+        margin-top: 30px;
+        
+    }
+    
+    .task .actions .delete {
+        margin-top: 30px;
+    }
+
+    .buttom-section {
+        display: none;
+    }
+
+    .contact-field {
+        display: block;
+      }
+    
+      .contain {
+        width: 100px;
+        height: 250px;
+        padding-left: 20px;
+      }
+      
+      .contain h4 {
+        padding: 5px;
+      }
+       
+       .contain p {
+   padding-top: 2px;
+   }
+   
+   .logo {
+    padding-left: 60px;
+}
+
+.side-bar {
+    position: fixed;
+    left: -250px;
+    transition: all .5s ease; 
+}
+
+#check {
+    display: none;
+}
+
+label #btn, label #cancel {
+    position: absolute;
+    cursor: pointer;
+    background-color: var(--profileColor);
+    border-radius: 3px;
+}
+
+label #btn {
+    left: 10px;
+    top: 15px;
+    font-size: 20px;
+    color: var(--contentColor);
+    padding: 6px 12px;
+    transition: all .5s;
+}
+
+label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 20px;
+    color: var(--contentColor);
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+
+#check:checked ~ .side-bar {
+    left: 0;
+    background-color: var(--profileColor);
+}
+
+#check:checked ~ label #btn {
+    opacity: 0;
+    left: 250px;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel {
+    left: 195px;
+}
+
+.profile-picture {
+    position: absolute;
+    width: 100%;
+    background-color: var(--profileBackground);
+    text-align: center;
+}
+
+.profile-section {
+    background-color: transparent;
+}
+
+.side-bar a {
+    color: var(--contentColor);
+}
+
+#btn, #cancel {
+    display: block;
+}
+
+
 }
