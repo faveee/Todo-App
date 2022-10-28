@@ -359,8 +359,8 @@ padding-top: 10px;
     .main {
        top: 40%;
        left: 2%;
-    width: 90%;
-    height: 65%;
+    width: 430px;
+    height: 410px;
     }
 
     #task-input {
@@ -390,9 +390,9 @@ padding-top: 10px;
     }
 
     #tasks .task .content .text {
-        width: 170%;
+        width: 100%;
         border-radius: 10px;
-        margin-right: 10px;
+        margin-right: 20px;
         font-size: 1rem;
     }
     
@@ -423,19 +423,15 @@ padding-top: 10px;
       }
     
       .contain {
-        width: 100px;
-        height: 250px;
+        width: 100%;
+        height: 100%;
         padding-left: 20px;
       }
       
       .contain h4 {
-        padding: 5px;
+        padding-top: 30px;
       }
        
-       .contain p {
-   padding-top: 2px;
-   }
-   
    .logo {
     padding-left: 60px;
 }
