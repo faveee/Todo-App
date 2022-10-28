@@ -358,8 +358,8 @@ padding-top: 10px;
 
     .main {
        top: 40%;
-       left: 2%;
-    width: 430px;
+       left: 5%;
+    width: 425px;
     height: 410px;
     }
 
@@ -390,9 +390,9 @@ padding-top: 10px;
     }
 
     #tasks .task .content .text {
-        width: 100%;
+        width: 192%;
         border-radius: 10px;
-        margin-right: 20px;
+        margin-right: 10px;
         font-size: 1rem;
     }
     
@@ -406,12 +406,11 @@ padding-top: 10px;
     }
 
     .task .actions .edit {
-        margin-top: 30px;
-        
+margin-left: 20px;
     }
     
     .task .actions .delete {
-        margin-top: 30px;
+        margin-left: 10px;
     }
 
     .buttom-section {
@@ -432,6 +431,7 @@ padding-top: 10px;
         padding-top: 30px;
       }
        
+   
    .logo {
     padding-left: 60px;
 }
